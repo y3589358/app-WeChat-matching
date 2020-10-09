@@ -1,0 +1,33 @@
+<view class='outer' >
+  <view class='inner'>
+    <view class="title">2.请将下列的科学家与相关的成就连线</view>
+    <movable-area>
+      <view class="row-left">
+        <block wx:for="{{data_scientist}}">
+        <view class='item'  id="{{item.index}}" data-index='{{index}}'>
+          <image src="{{item.imgSrc}}"></image>
+        </view>
+      </block>
+      </view>
+      <view class="row-mid">
+        <canvas class="canvas" id="myCanvas" canvas-id="myCanvas" style='height:{{canvasHeight}}px' bindtouchstart='EventHandleStart'  bindtouchend='EventHandleEnd' binderror="canvasIdErrorCallback" />
+      </view>
+      <view class="row-right">
+        <block wx:for="{{data_achievement}}">
+        <view class='item'  id="{{item.index}}" data-index='{{index}}'>
+          <image src="{{item.imgSrc}}"></image>
+        </view>
+      </block>
+      </view>
+      <movable-view x="{{x}}" y="{{y}}" direction="all" damping="{{5000}}" 
+      friction="{{1}}" disabled="{{disabled}}">
+        <view class='item-move' hidden='{{hidden}}'>
+        </view>
+      </movable-view>
+    </movable-area>
+    <view class="btnContainner" bindtap="clearLine">
+      <button class="btnPre btn"  type="primary" bindtap="goPre">上一题</button>
+      <button class="btnNext btn" type="primary">下一题</button>
+    </view>
+  </view>
+</view>

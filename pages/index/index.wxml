@@ -1,0 +1,21 @@
+<view class='outer' >
+  <view class='inner'>
+    <view class="title">1.请将8大行星距离太阳远近排序</view>
+    <movable-area>
+      <block wx:for="{{data}}">
+        <view class='item'  id="{{item.index}}" data-index='{{index}}' bindlongpress='_longtap' bindtouchstart='touchs' bindtouchend='touchend' bindtouchmove='touchm'>
+          <image src="{{item.imgSrc}}"></image>
+        </view>
+      </block>
+      <movable-view x="{{x}}" y="{{y}}" direction="all" damping="{{5000}}" 
+      friction="{{1}}" disabled="{{disabled}}">
+        <view class='item-move' hidden='{{hidden}}'>
+        </view>
+      </movable-view>
+    </movable-area>
+    <view class="btnContainner">
+        <button class="btnPre btn"  type="primary">上一题</button>
+        <button class="btnNext btn" type="primary" bindtap="goNextPage">下一题</button>
+    </view>
+  </view>
+</view>

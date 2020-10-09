@@ -1,0 +1,107 @@
+
+.outer{
+  width: 650rpx;
+  /* height: 400rpx; */
+  margin: 0 auto;
+}
+.inner{
+  width: 100%;
+  height: 100%;
+}
+.inner .title{
+  color:#8580DA;
+  width:100%;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+movable-area{
+  width: 540rpx;
+  /* width: 50%; */
+  margin: 0 auto;
+  height: 100%;
+}
+.row-left{
+  width: 180rpx;
+  float: left;
+}
+.row-mid{
+  width: 180rpx;
+  float: left;
+}
+.row-right{
+  width: 180rpx;
+  float: right;
+}
+.item{
+  display: inline-block;
+  width: 180rpx;
+  height: 180rpx;
+  /* border: 1px solid red; */
+  text-align: center;
+  line-height: 180rpx;
+}
+.item image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.index-first{
+  display: inline-block;
+  width: 180rpx;
+  height: 180rpx;
+  background: firebrick;
+}
+
+.item-move{
+  display: inline-block;
+  width: 180rpx;
+  height: 180rpx;
+  -moz-box-shadow:2px 2px 20px #4A4A4A, 2px 2px 5px #333333; -webkit-box-shadow:2px 2px 20px #4A4A4A, 2px 2px 5px #333333; box-shadow:2px 2px 20px #4A4A4A, 2px 2px 5px #333333;
+  /* border: 1px solid blue; */
+}
+.inner
+.btnContainner
+.btn{
+  width:220rpx;
+  margin: 20rpx 0 0 0;
+  display: inline-block;
+  float: left;
+  background-color: #8580DA;
+  color: #fff;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.inner
+.btnContainner
+.btn.btnNext{
+  float: right;
+}
+
+.btnContainner{
+  text-align: center;
+  margin-top:15rpx ;
+}
+
+.btnNext{
+
+}
+.canvas{
+  width: 180rpx;
+  /* height: 560rpx; */
+}
+.myCanvas{
+  border:  1px solid;
+  margin: 0  auto;
+}
+
+.btnContainner, movable-area{
+  overflow: hidden;
+}
+
+.btnContainner{
+  overflow: hidden;
+  padding-top:300rpx;
+}
